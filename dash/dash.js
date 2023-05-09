@@ -4,13 +4,14 @@ import { TableProductos } from "../components/tableProductos.js";
 import { TableUsuarios } from "../components/tableUsuarios.js";
 import { TableVentas } from "../components/tableVentas.js";
 import { TableCompras } from "../components/tableCompras.js";
-import { TableReporte } from "../components/tableReportes.js";
+import { TableReporte } from "../components/tableReportes.js"
+import { ModalCategorias } from "../components/modalCategorias.js";
 import {
   GETCategorias,
   POSTCategorias,
   DELETECategorias,
 } from "../back/peticiones.js";
-let myFormCategoria = document.querySelector(`#myFormCategoria`);
+
 let containerTabla = document.querySelector("#container-table");
 let categorias = document.querySelector(`#categorias`);
 let productos = document.querySelector(`#productos`);
@@ -24,6 +25,19 @@ categorias.addEventListener("click", (e) => {
   e.preventDefault();
   containerTabla.innerHTML = "";
   TableCategorias();
+  ModalCategorias()
+
+  let myFormCategoria = document.querySelector(`#myFormCategoria`);
+  myFormCategoria.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let accion = e.submitter.dataset.accion;
+    if (accion === "enviar") {
+      POSTCategorias(e);
+    } else {
+      alert(`No se puede agregar Datos Vacios`);
+    }
+  });
+  
   GETCategorias();
   let myData = document.querySelector(`#myDataBody`);
 
@@ -39,15 +53,7 @@ categorias.addEventListener("click", (e) => {
   });
 });
 
-myFormCategoria.addEventListener("submit", (e) => {
-  e.preventDefault();
-  let accion = e.submitter.dataset.accion;
-  if (accion === "enviar") {
-    POSTCategorias(e);
-  } else {
-    alert(`No se puede agregar Datos Vacios`);
-  }
-});
+
 
 productos.addEventListener("click", (e) => {
   e.preventDefault();

@@ -1,43 +1,77 @@
 export function ModalCategorias() {
-    /* let body = document.querySelector("body");
-    let  */
-    let containerTabla = document.querySelector("#container-table");
-    let button = document.createElement("button");
-    button.setAttribute("type", `button`);
-    button.setAttribute(
-      "class",
-      "btn btn-outline-light rounded-pill px-3 mt-1"
-    );
-    button.setAttribute("data-bs-toggle", "modal");
-    button.setAttribute("data-bs-target", "#sirva");
-    button.innerHTML = `
-      <i class="bi bi-plus-circle m-auto fs-3"></i>
-      `;
-    let table = document.createElement("table");
-    table.setAttribute("class", `table table-dark table-hover mt-3`);
-    table.innerHTML = `
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">IMAGEN</th>
-            <th scope="col">CLIENTE</th>
-            <th scope="col">CELULAR</th>
-            <th scope="col">DETALLES</th>
-            <th scope="col">BORRAR</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>SIUUU</td>
-            <td><button type="button" class="btn btn-warning">Detail</button></td>
-            <td><button type="button" class="btn btn-danger">Borrar</button></td>
-          </tr>
-        </tbody>
-          `;
-    containerTabla.appendChild(button);
-    containerTabla.appendChild(table);
-  }
-  
+  let body = document.querySelector("body");
+
+  let div = document.createElement("div");
+  div.setAttribute("class", `modal fade`);
+  div.setAttribute("id", "modalCategorias");
+  div.setAttribute("data-bs-backdrop", "static");
+  div.setAttribute("data-bs-keyboard", "false");
+  div.setAttribute("tabindex", "-1");
+  div.setAttribute("aria-labelledby", "modalCategoriasLabel");
+  div.setAttribute("aria-hidden", "true");
+
+  div.innerHTML = `
+  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header bg-title fw-bold">
+      <h5 class="modal-title" id="modalCategoriasLabel">
+        Registro de Categoria
+      </h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+    <form id="myFormCategoria">
+      <div class="modal-body">
+        <div class="row g-3">
+          <div class="col-12">
+            <label for="inputName" class="form-label">
+              Nombre
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputName"
+              placeholder="Ingrese su Nombre"
+              name="name"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="inputDescripcion" class="form-label">
+              Descripcion
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputDescripcion"
+              placeholder="Ingresa Tu Email"
+              name="descripcion"
+              required
+            />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <input
+          type="button"
+          class="btn btn-danger text-dark"
+          data-bs-dismiss="modal"
+          value="Cerrar"
+        />
+        <input
+          type="submit"
+          class="btn btn-warning"
+          data-accion="enviar"
+          value="Enviar Registro"
+        />
+      </div>
+    </form>
+  </div>
+</div>
+`;
+  body.appendChild(div);
+}

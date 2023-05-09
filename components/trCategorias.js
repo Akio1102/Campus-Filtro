@@ -6,6 +6,7 @@ export function Fila(categori) {
   tr.innerHTML = `
           <td>${categori.id}</td>
           <td>${categori.name}</td>
+          <td>${categori.descripcion}</td>
           <td>
             <button data-accion="eliminar" class="btn btn-outline-danger">
               <i class="bi bi-trash"></i>

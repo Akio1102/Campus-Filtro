@@ -21,6 +21,7 @@ export function TableCategorias() {
         <tr>
           <th>ID</th>
           <tH>CATEGORIA</th>
+          <tH>DESCRIPCION</th>
           <tH>BORRAR</th>
         </tr>
       </thead>
