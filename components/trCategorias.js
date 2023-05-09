@@ -1,4 +1,4 @@
-export function Fila(categori) {
+export function FilaCategorias(categori) {
   let tablaBody = document.querySelector("#myDataBody");
   let tr = document.createElement("tr");
   tr.setAttribute("id", `${categori.id}`);

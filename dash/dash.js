@@ -4,11 +4,15 @@ import { TableProductos } from "../components/tableProductos.js";
 import { TableUsuarios } from "../components/tableUsuarios.js";
 import { TableVentas } from "../components/tableVentas.js";
 import { TableCompras } from "../components/tableCompras.js";
-import { TableReporte } from "../components/tableReportes.js"
+import { TableReporte } from "../components/tableReportes.js";
 import { ModalCategorias } from "../components/modalCategorias.js";
+import { ModalUser } from "../components/modalUsuarios.js";
 import {
+  GETUsuarios,
   GETCategorias,
   POSTCategorias,
+  POSTUsers,
+  DELETEUsers,
   DELETECategorias,
 } from "../back/peticiones.js";
 
@@ -25,7 +29,7 @@ categorias.addEventListener("click", (e) => {
   e.preventDefault();
   containerTabla.innerHTML = "";
   TableCategorias();
-  ModalCategorias()
+  ModalCategorias();
 
   let myFormCategoria = document.querySelector(`#myFormCategoria`);
   myFormCategoria.addEventListener("submit", (e) => {
@@ -37,7 +41,7 @@ categorias.addEventListener("click", (e) => {
       alert(`No se puede agregar Datos Vacios`);
     }
   });
-  
+
   GETCategorias();
   let myData = document.querySelector(`#myDataBody`);
 
@@ -52,8 +56,6 @@ categorias.addEventListener("click", (e) => {
     }
   });
 });
-
-
 
 productos.addEventListener("click", (e) => {
   e.preventDefault();
@@ -71,6 +73,32 @@ usuarios.addEventListener("click", (e) => {
   e.preventDefault();
   containerTabla.innerHTML = "";
   TableUsuarios();
+  ModalUser();
+
+  let myFormUser = document.querySelector(`#myFormUser`);
+  myFormUser.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let accion = e.submitter.dataset.accion;
+    if (accion === "enviar") {
+      POSTUsers(e);
+    } else {
+      alert(`No se puede agregar Datos Vacios`);
+    }
+  });
+
+  GETUsuarios();
+  let myData = document.querySelector(`#myDataBody`);
+
+  myData.addEventListener("click", (e) => {
+    e.preventDefault();
+    let accion = e.target.dataset.accion;
+    let contenedor = e.target.closest(`.tr`);
+    let id = contenedor.getAttribute(`id`);
+    if (accion == "eliminar") {
+      DELETEUsers(contenedor, id);
+      alert(`Usuario Borrada`);
+    }
+  });
 });
 
 ventas.addEventListener("click", (e) => {

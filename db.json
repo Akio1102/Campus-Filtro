@@ -6,13 +6,6 @@
       "password": "123",
       "email": "akio@gmail.com",
       "id": 1
-    },
-    {
-      "name": "Miguel",
-      "user": "Miguelin",
-      "password": "098",
-      "email": "miguel@test.com",
-      "id": 2
     }
   ],
   "categorias": [
@@ -20,11 +13,6 @@
       "name": "Filtro",
       "descripcion": "esta mrd esta extensa",
       "id": 1
-    },
-    {
-      "name": "Filtron!!",
-      "descripcion": "JUEPUTAAAA",
-      "id": 2
     },
     {
       "name": "Jueputa no sirve :c",

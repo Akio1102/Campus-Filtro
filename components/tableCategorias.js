@@ -1,7 +1,4 @@
-/* import { ModalCategorias } from "./modalCategorias.js"; */
 export function TableCategorias() {
-  /* let body = document.querySelector("body");
-  let  */
   let containerTabla = document.querySelector("#container-table");
   let button = document.createElement("button");
   button.setAttribute("type", `button`);
