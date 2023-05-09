@@ -1,10 +1,10 @@
 {
   "user": [
     {
-      "name": "Cristian",
-      "user": "Akio",
+      "name": "Miguel",
+      "user": "Miguelin",
       "password": "123",
-      "email": "akio@gmail.com",
+      "email": "miguel@test.com",
       "id": 1
     }
   ],
