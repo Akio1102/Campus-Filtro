@@ -1,5 +1,20 @@
 {
-  "user": [],
+  "user": [
+    {
+      "name": "Cristian",
+      "user": "Akio",
+      "password": "123",
+      "email": "akio@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Miguel",
+      "user": "Miguelin",
+      "password": "098",
+      "email": "miguel@test.com",
+      "id": 2
+    }
+  ],
   "categorias": [],
   "productos": [],
   "clientes": []

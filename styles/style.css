@@ -1,0 +1,27 @@
+body{
+    height: 100%;
+    background-image: url("../assets/fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.margen{
+    margin-top: 20vh;
+}
+.color-title{
+    color: rgb(130, 231, 206);
+}
+.text-Fsize{
+    font-size: 3rem;
+}
+.text-Fsize2{
+    font-size: 5rem;
+}
+.bg-title{
+    background-color: rgb(117, 235, 205);;
+}
+.bg-title-modal{
+    background-color: rgb(219, 36, 179);;
+
+}

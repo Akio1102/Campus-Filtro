@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./main.js" type="module"></script>
+  </head>
+  <body>
+    <!-- Button Usuario -->
+    <div class="container-fluid">
+      <div class="row ps-5 pt-3">
+        <div class="col-auto">
+          <button
+          type="button"
+          class="btn btn-outline-light rounded-pill px-3 py-2"
+          data-bs-toggle="modal"
+          data-bs-target="#modalSesion"
+        >
+          Iniciar sesión
+        </button>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid margen">
+      <div class="row ps-0 ps-sm-5 text-uppercase">
+        <div class="col-12">
+          <div class="col">
+            <h2 class="col-12 col-sm-3 color-title text-Fsize">
+              Sistema de facturacion y marketing
+            </h2>
+          </div>
+          <div class="col">
+            <h1 class="col-12 col-sm-2 text-white text-Fsize2">campus 2.0</h1>
+          </div>
+          <div class="col">
+            <button
+              type="button"
+              class="btn btn-outline-light rounded-pill px-5 mt-5 fs-1"
+              data-bs-toggle="modal"
+              data-bs-target="#modalUser"
+            >
+              REGISTRO
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal User-->
+    <div
+      class="modal fade"
+      id="modalUser"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalUSerLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-title fw-bold">
+            <h5 class="modal-title" id="modalUSerLabel">Registro de Usuario</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form id="myFormUser">
+            <div class="modal-body">
+              <div class="row g-3">
+                <div class="col-12">
+                  <label for="inputName" class="form-label">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="Ingrese su Nombre"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="col-6">
+                  <label for="inputUser" class="form-label">User</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputUser"
+                    placeholder="Ingrese su User"
+                    name="user"
+                    required
+                  />
+                </div>
+                <div class="col-6">
+                  <label for="inputPassword" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassword"
+                    placeholder="Ingrese su Contraseña"
+                    name="password"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="inputEmail" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    placeholder="Ingresa Tu Email"
+                    name="email"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <input
+                type="button"
+                class="btn btn-danger text-dark"
+                data-bs-dismiss="modal"
+                value="Cerrar"
+              />
+              <input
+                type="submit"
+                class="btn btn-warning"
+                data-accion="enviar"
+                value="Enviar Registro"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Sesion-->
+    <div
+      class="modal fade"
+      id="modalSesion"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalSesionLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-title-modal">
+            <h5 class="modal-title text-light" id="modalSesionLabel">
+              Inisiar Sesión
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form id="myFormSesion">
+            <div class="modal-body">
+              <div class="row g-3">
+                <div class="col-12">
+                  <label for="inputUsuario" class="form-label">Usuario</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputUsuario"
+                    placeholder="Ingrese su Usuario"
+                    name="user"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="inputContrasena" class="form-label"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputContrasena"
+                    placeholder="Ingresa su Contraseña"
+                    name="password"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer justify-content-start">
+              <input
+                type="submit"
+                class="btn btn-warning"
+                data-accion="iniciar"
+                value="Iniciar"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
