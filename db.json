@@ -15,7 +15,23 @@
       "id": 2
     }
   ],
-  "categorias": [],
+  "categorias": [
+    {
+      "name": "Filtro",
+      "descripcion": "esta mrd esta extensa",
+      "id": 1
+    },
+    {
+      "name": "Filtron!!",
+      "descripcion": "JUEPUTAAAA",
+      "id": 2
+    },
+    {
+      "name": "Jueputa no sirve :c",
+      "descripcion": "HELP!",
+      "id": 3
+    }
+  ],
   "productos": [],
   "clientes": []
 }
