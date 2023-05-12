@@ -8,6 +8,7 @@ import { TableReporte } from "../components/tables/tableReportes.js";
 import { ModalCategorias } from "../components/modals/modalCategorias.js";
 import { ModalUser } from "../components/modals/modalUsuarios.js";
 import { ModalProductos } from "../components/modals/modalProductos.js";
+import { ModalClientes } from "../components/modals/modalClientes.js";
 import {
   GETUsuarios,
   GETCategorias,
@@ -69,6 +70,7 @@ clientes.addEventListener("click", (e) => {
   e.preventDefault();
   containerTabla.innerHTML = "";
   TableCliente();
+  ModalClientes();
 });
 
 usuarios.addEventListener("click", (e) => {

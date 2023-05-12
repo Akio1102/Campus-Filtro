@@ -12,66 +12,83 @@ export function ModalClientes() {
 
   div.innerHTML = `
   <div class="modal-dialog modal-dialog-centered">
-  <div class="modal-content">
-    <div class="modal-header bg-title fw-bold">
-      <h5 class="modal-title" id="modalClientesLabel">
-        Registro de Categoria
-      </h5>
-      <button
-        type="button"
-        class="btn-close"
-        data-bs-dismiss="modal"
-        aria-label="Close"
-      ></button>
-    </div>
-    <form id="myFormCliente">
-      <div class="modal-body">
-        <div class="row g-3">
-          <div class="col-12">
-            <label for="inputName" class="form-label">
-              Nombre
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputName"
-              placeholder="Ingrese su Nombre"
-              name="name"
-              required
-            />
+        <div class="modal-content">
+          <div class="modal-header bg-title fw-bold">
+            <h5 class="modal-title" id="modalClientesLabel">
+              Registro de Clientes
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-          <div class="col-12">
-            <label for="inputDescripcion" class="form-label">
-              Descripcion
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputDescripcion"
-              placeholder="Ingresa Tu Email"
-              name="descripcion"
-              required
-            />
-          </div>
+          <form id="myFormClientes">
+            <div class="modal-body">
+              <div class="row g-3">
+                <div class="col-12">
+                  <label for="inputImg" class="form-label">Ingresar Imagen</label>
+                  <input class="form-control" type="file" id="inputImg"  name="img" required>  
+                </div>
+                <div class="col-12">
+                  <label for="inputNombre" class="form-label">
+                    Nombre
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputNombre"
+                    placeholder="Ingresa el Nombre"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="inputDireccion" class="form-label">
+                    Direccion
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputDireccion"
+                    placeholder="Ingresa la Direccion"
+                    name="direccion"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="inputTelefono" class="form-label">
+                    Telefono
+                  </label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="inputTelefono"
+                    placeholder="Ingresa el Telefono"
+                    name="telefono"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <input
+                type="button"
+                class="btn btn-danger text-dark"
+                data-bs-dismiss="modal"
+                value="Cerrar"
+              />
+              <input
+                type="submit"
+                class="btn btn-warning"
+                data-accion="enviar"
+                value="Enviar Registro"
+              />
+            </div>
+          </form>
         </div>
       </div>
-      <div class="modal-footer">
-        <input
-          type="button"
-          class="btn btn-danger text-dark"
-          data-bs-dismiss="modal"
-          value="Cerrar"
-        />
-        <input
-          type="submit"
-          class="btn btn-warning"
-          data-accion="enviar"
-          value="Enviar Registro"
-        />
-      </div>
-    </form>
-  </div>
-</div>
 `;
   body.appendChild(div);
 }

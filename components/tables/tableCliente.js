@@ -4,7 +4,7 @@ export function TableCliente() {
   button.setAttribute("type", `button`);
   button.setAttribute("class", "btn btn-outline-light rounded-pill px-3 mt-1");
   button.setAttribute("data-bs-toggle", "modal");
-  button.setAttribute("data-bs-target", "#modalCliente");
+  button.setAttribute("data-bs-target", "#modalClientes");
   button.innerHTML = `
     <i class="bi bi-plus-circle m-auto fs-3"></i>
     `;
@@ -15,10 +15,10 @@ export function TableCliente() {
       <tr>
         <th scope="col">ID</th>
         <th scope="col">IMAGEN</th>
-        <th scope="col">CLIENTE</th>
-        <th scope="col">CELULAR</th>
-        <th scope="col">DETALLES</th>
-        <th scope="col">BORRAR</th>
+        <th scope="col">NOMBRE</th>
+        <th scope="col">DIRECCION</th>
+        <th scope="col">TELEFONO</th>
+        <th scope="col">ACCIONES</th>
       </tr>
     </thead>
     <tbody>
@@ -27,8 +27,11 @@ export function TableCliente() {
         <td>Mark</td>
         <td>Otto</td>
         <td>@mdo</td>
-        <td><button type="button" class="btn btn-warning">Detail</button></td>
+        <td>xd</td>
         <td>
+            <button data-accion="editar"  class="btn btn-outline-warning">
+              <i class="bi bi-pencil-square"></i>
+            </button>    
             <button data-accion="eliminar" class="btn btn-outline-danger">
               <i class="bi bi-trash"></i>
             </button>
