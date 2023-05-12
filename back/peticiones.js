@@ -1,5 +1,5 @@
-import { FilaCategorias } from "../components/trCategorias.js";
-import { FilaUsuarios } from "../components/trUsuarios.js";
+import { FilaCategorias } from "../components/trs/trCategorias.js";
+import { FilaUsuarios } from "../components/trs//trUsuarios.js";
 
 
 const URL = `http://localhost:3000`;

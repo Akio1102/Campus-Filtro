@@ -6,6 +6,13 @@
       "password": "123",
       "email": "miguel@test.com",
       "id": 1
+    },
+    {
+      "name": "Camper",
+      "user": "camper1",
+      "password": "000",
+      "email": "camper@xd.com",
+      "id": 2
     }
   ],
   "categorias": [
@@ -18,6 +25,16 @@
       "name": "Jueputa no sirve :c",
       "descripcion": "HELP!",
       "id": 3
+    },
+    {
+      "name": "sdjkaskjdfhn",
+      "descripcion": "lksdlkfsdfkldsndlfanlksfdnkladads",
+      "id": 4
+    },
+    {
+      "name": "test",
+      "descripcion": "testeooo",
+      "id": 5
     }
   ],
   "productos": [],

@@ -1,12 +1,13 @@
-import { TableCategorias } from "../components/tableCategorias.js";
-import { TableCliente } from "../components/tableCliente.js";
-import { TableProductos } from "../components/tableProductos.js";
-import { TableUsuarios } from "../components/tableUsuarios.js";
-import { TableVentas } from "../components/tableVentas.js";
-import { TableCompras } from "../components/tableCompras.js";
-import { TableReporte } from "../components/tableReportes.js";
-import { ModalCategorias } from "../components/modalCategorias.js";
-import { ModalUser } from "../components/modalUsuarios.js";
+import { TableCategorias } from "../components/tables/tableCategorias.js";
+import { TableCliente } from "../components/tables/tableCliente.js";
+import { TableProductos } from "../components/tables/tableProductos.js";
+import { TableUsuarios } from "../components/tables/tableUsuarios.js";
+import { TableVentas } from "../components/tables/tableVentas.js";
+import { TableCompras } from "../components/tables/tableCompras.js";
+import { TableReporte } from "../components/tables/tableReportes.js";
+import { ModalCategorias } from "../components/modals/modalCategorias.js";
+import { ModalUser } from "../components/modals/modalUsuarios.js";
+import { ModalProductos } from "../components/modals/modalProductos.js";
 import {
   GETUsuarios,
   GETCategorias,
@@ -61,6 +62,7 @@ productos.addEventListener("click", (e) => {
   e.preventDefault();
   containerTabla.innerHTML = "";
   TableProductos();
+  ModalProductos();
 });
 
 clientes.addEventListener("click", (e) => {

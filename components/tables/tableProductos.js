@@ -14,10 +14,11 @@ export function TableProductos() {
       <thead>
         <tr>
           <th scope="col">ID</th>
-          <th scope="col">IMAGEN</th>
-          <th scope="col">CLIENTE</th>
-          <th scope="col">CELULAR</th>
-          <th scope="col">BORRAR</th>
+          <th scope="col">NOMBRE</th>
+          <th scope="col">PRECIO</th>
+          <th scope="col">STOCK</th>
+          <th scope="col">CATEGORIA</th>
+          <th scope="col">ACCIONES</th>
         </tr>
       </thead>
       <tbody>
@@ -26,7 +27,11 @@ export function TableProductos() {
           <td>esooo</td>
           <td>Otto</td>
           <td>@mdo</td>
+          <td>@mdo</td>
           <td>
+            <button data-accion="editar"  class="btn btn-outline-warning">
+              <i class="bi bi-pencil-square"></i>
+            </button>
             <button data-accion="eliminar" class="btn btn-outline-danger">
               <i class="bi bi-trash"></i>
             </button>
