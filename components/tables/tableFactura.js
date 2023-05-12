@@ -1,10 +1,10 @@
-export function TableReporte() {
+export function TableFactura() {
   let containerTabla = document.querySelector("#container-table");
   let button = document.createElement("button");
   button.setAttribute("type", `button`);
   button.setAttribute("class", "btn btn-outline-light rounded-pill px-3 mt-1");
   button.setAttribute("data-bs-toggle", "modal");
-  button.setAttribute("data-bs-target", "#modalReportes");
+  button.setAttribute("data-bs-target", "#modalFacturas");
   button.innerHTML = `
     <i class="bi bi-plus-circle m-auto fs-3"></i>
     `;
@@ -14,21 +14,22 @@ export function TableReporte() {
       <thead>
         <tr>
           <th scope="col">ID</th>
-          <th scope="col">IMAGEN</th>
-          <th scope="col">CLIENTE</th>
-          <th scope="col">CELULAR</th>
-          <th scope="col">DETALLES</th>
-          <th scope="col">BORRAR</th>
+          <th scope="col">FACTURA ID</th>
+          <th scope="col">PRODUCTO ID</th>
+          <th scope="col">CANTIDAD</th>
+          <th scope="col">ACCIONES</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
+      <tbody id="myDataBody">
+      <tr>
           <th>1</th>
-          <td>Mark</td>
+          <td>esooo</td>
           <td>Otto</td>
-          <td>REPORTE</td>
-          <td><button type="button" class="btn btn-warning">Detail</button></td>
+          <td>@mdo</td>
           <td>
+            <button data-accion="editar"  class="btn btn-outline-warning">
+              <i class="bi bi-pencil-square"></i>
+            </button>
             <button data-accion="eliminar" class="btn btn-outline-danger">
               <i class="bi bi-trash"></i>
             </button>
@@ -36,6 +37,6 @@ export function TableReporte() {
         </tr>
       </tbody>
         `;
-  containerTabla.appendChild(button);
+  containerTabla.appendChild(buttn);
   containerTabla.appendChild(table);
 }

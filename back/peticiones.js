@@ -1,14 +1,15 @@
 import { FilaCategorias } from "../components/trs/trCategorias.js";
 import { FilaUsuarios } from "../components/trs//trUsuarios.js";
-
+import { sectionIdCategorias } from "../components/section/sectionIdCategorias.js";
 
 const URL = `http://localhost:3000`;
 const headers = new Headers({ "Content-Type": "application/json" });
 
 export async function GETUsers(event) {
   let data = Object.fromEntries(new FormData(event.target));
-  let peticion = await fetch(`${URL}/user`);
+  let peticion = await fetch(`${URL}/users`);
   let datos = await peticion.json();
+
   if (datos == false) {
     alert(`No hay Datos`);
   } else {
@@ -21,7 +22,7 @@ export async function GETUsers(event) {
 }
 
 export async function GETUsuarios(event) {
-  let peticion = await fetch(`${URL}/user`);
+  let peticion = await fetch(`${URL}/users`);
   let datos = await peticion.json();
   if (datos == false) {
     alert(`No hay Datos`);
@@ -39,7 +40,7 @@ export async function POSTUsers(event) {
     headers: headers,
     body: JSON.stringify(data),
   };
-  let peticion = await fetch(`${URL}/user`, config);
+  let peticion = await fetch(`${URL}/users`, config);
   datos = await peticion.json();
 }
 
@@ -50,8 +51,20 @@ export async function DELETEUsers(event, id) {
     headers: headers,
     body: JSON.stringify(data),
   };
-  let peticion = await fetch(`${URL}/user/${id}`, config);
+  let peticion = await fetch(`${URL}/users/${id}`, config);
   datos = await peticion.json();
+}
+
+export async function GETSelectCategorias() {
+  let peticion = await fetch(`${URL}/categorias`);
+  let datos = await peticion.json();
+  if (datos == false) {
+    alert(`No hay Datos`);
+  } else {
+    datos.forEach((ele) => {
+      sectionIdCategorias(ele);
+    });
+  }
 }
 
 export async function GETCategorias() {

@@ -14,11 +14,11 @@ export function TableCompras() {
       <thead>
         <tr>
           <th scope="col">ID</th>
-          <th scope="col">IMAGEN</th>
-          <th scope="col">CLIENTE</th>
-          <th scope="col">CELULAR</th>
-          <th scope="col">DETALLES</th>
-          <th scope="col">BORRAR</th>
+          <th scope="col">FECHA</th>
+          <th scope="col">PRODUCTO ID</th>
+          <th scope="col">CANTIDAD</th>
+          <th scope="col">PROVEEDOR</th>
+          <th scope="col">ACCIONES</th>
         </tr>
       </thead>
       <tbody>
@@ -27,8 +27,11 @@ export function TableCompras() {
           <td>Mark</td>
           <td>COMPRAS</td>
           <td>@mdo</td>
-          <td><button type="button" class="btn btn-warning">Detail</button></td>
+          <td>@mdo</td>
           <td>
+            <button data-accion="editar"  class="btn btn-outline-warning">
+                <i class="bi bi-pencil-square"></i>
+              </button> 
             <button data-accion="eliminar" class="btn btn-outline-danger">
               <i class="bi bi-trash"></i>
             </button>

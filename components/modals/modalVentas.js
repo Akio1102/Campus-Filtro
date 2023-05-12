@@ -1,21 +1,21 @@
-export function ModalClientes() {
+export function ModalVentas() {
   let body = document.querySelector("body");
 
   let div = document.createElement("div");
   div.setAttribute("class", `modal fade`);
-  div.setAttribute("id", "modalClientes");
+  div.setAttribute("id", "modalVentas");
   div.setAttribute("data-bs-backdrop", "static");
   div.setAttribute("data-bs-keyboard", "false");
   div.setAttribute("tabindex", "-1");
-  div.setAttribute("aria-labelledby", "modalClientesLabel");
+  div.setAttribute("aria-labelledby", "modalVentasLabel");
   div.setAttribute("aria-hidden", "true");
 
   div.innerHTML = `
   <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header bg-title fw-bold">
-            <h5 class="modal-title" id="modalClientesLabel">
-              Registro de Clientes
+            <h5 class="modal-title" id="modalVentasLabel">
+              Registro de Ventas
             </h5>
             <button
               type="button"
@@ -24,49 +24,43 @@ export function ModalClientes() {
               aria-label="Close"
             ></button>
           </div>
-          <form id="myFormClientes">
+          <form id="myFormVentas">
             <div class="modal-body">
               <div class="row g-3">
                 <div class="col-12">
-                  <label for="inputImg" class="form-label">Ingresar Imagen</label>
-                  <input class="form-control" type="file" id="inputImg"  name="img" required>  
-                </div>
-                <div class="col-12">
-                  <label for="inputNombre" class="form-label">
-                    Nombre
-                  </label>
+                  <label for="inputClienteID" class="form-label"> Cliente ID </label>
                   <input
                     type="text"
                     class="form-control"
-                    id="inputNombre"
-                    placeholder="Ingresa el Nombre"
-                    name="name"
+                    id="inputClienteID"
+                    placeholder="Ingrese su Cliente ID"
+                    name="clienteID"
                     required
                   />
                 </div>
                 <div class="col-12">
-                  <label for="inputDireccion" class="form-label">
-                    Direccion
+                  <label for="inputEmpleadoID" class="form-label">
+                    Empleado ID
                   </label>
                   <input
                     type="text"
                     class="form-control"
-                    id="inputDireccion"
-                    placeholder="Ingresa la Direccion"
-                    name="direccion"
+                    id="inputEmpleadoID"
+                    placeholder="Ingresa el Empleado ID"
+                    name="empleadoID"
                     required
                   />
                 </div>
                 <div class="col-12">
-                  <label for="inputTelefono" class="form-label">
-                    Telefono
+                  <label for="inputFecha" class="form-label">
+                    Fecha
                   </label>
                   <input
-                    type="number"
+                    type="date"
                     class="form-control"
-                    id="inputTelefono"
-                    placeholder="Ingresa el Telefono"
-                    name="telefono"
+                    id="inputFecha"
+                    placeholder="Ingresa el Fecha"
+                    name="fecha"
                     required
                   />
                 </div>

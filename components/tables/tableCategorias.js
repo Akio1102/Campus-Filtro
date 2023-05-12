@@ -19,7 +19,7 @@ export function TableCategorias() {
           <th>ID</th>
           <tH>CATEGORIA</th>
           <tH>DESCRIPCION</th>
-          <tH>BORRAR</th>
+          <tH>ACCIONES</th>
         </tr>
       </thead>
       <tbody id="myDataBody">

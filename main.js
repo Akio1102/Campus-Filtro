@@ -16,6 +16,7 @@ myFormUser.addEventListener("submit", async (e) => {
 myFormSesion.addEventListener("submit", (e) => {
   e.preventDefault();
   let accion = e.submitter.dataset.accion;
+  console.log(accion);
   if (accion === "iniciar") {
     GETUsers(e);
   } else {

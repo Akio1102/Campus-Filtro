@@ -69,21 +69,16 @@ export function ModalProductos() {
                 <div class="col-12">
                   <label for="inputCategoria" class="form-label">
                     Categoria
+                    <select class="form-select" aria-label="Default select example" id="selectCategorias">
+                      <option selected>Seleccione el ID de la Categoria</option>
+                    </select>
                   </label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="inputCategoria"
-                    placeholder="Ingresa el ID de Categoria"
-                    name="categoriaID"
-                    required
-                  />
                 </div>
               </div>
             </div>
             <div class="modal-footer">
               <input
-                type="button"
+                type="reset"
                 class="btn btn-danger text-dark"
                 data-bs-dismiss="modal"
                 value="Cerrar"

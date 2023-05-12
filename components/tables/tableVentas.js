@@ -17,8 +17,7 @@ export function TableVentas() {
           <th scope="col">IMAGEN</th>
           <th scope="col">CLIENTE</th>
           <th scope="col">CELULAR</th>
-          <th scope="col">DETALLES</th>
-          <th scope="col">BORRAR</th>
+          <th scope="col">ACCIONES</th>
         </tr>
       </thead>
       <tbody>
@@ -27,8 +26,10 @@ export function TableVentas() {
           <td>vendooo</td>
           <td>Otto</td>
           <td>SIUUU</td>
-          <td><button type="button" class="btn btn-warning">Detail</button></td>
           <td>
+            <button data-accion="editar"  class="btn btn-outline-warning">
+              <i class="bi bi-pencil-square"></i>
+            </button> 
             <button data-accion="eliminar" class="btn btn-outline-danger">
               <i class="bi bi-trash"></i>
             </button>

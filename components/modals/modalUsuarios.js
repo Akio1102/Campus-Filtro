@@ -73,7 +73,7 @@ export function ModalUser() {
         </div>
         <div class="modal-footer">
           <input
-            type="button"
+            type="reset"
             class="btn btn-danger text-dark"
             data-bs-dismiss="modal"
             value="Cerrar"

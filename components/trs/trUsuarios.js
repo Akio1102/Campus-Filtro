@@ -10,6 +10,9 @@ export function FilaUsuarios(usuario) {
             <td>${usuario.password}</td>
             <td>${usuario.email}</td>
             <td>
+              <button data-accion="editar"  class="btn btn-outline-warning">
+                <i class="bi bi-pencil-square"></i>
+              </button> 
               <button data-accion="eliminar" class="btn btn-outline-danger">
                 <i class="bi bi-trash"></i>
               </button>

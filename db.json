@@ -1,5 +1,5 @@
 {
-  "user": [
+  "users": [
     {
       "name": "Miguel",
       "user": "Miguelin",
@@ -35,6 +35,11 @@
       "name": "test",
       "descripcion": "testeooo",
       "id": 5
+    },
+    {
+      "name": "OSCAR",
+      "descripcion": "AKSJDHADSKJHADSKJHSAKJD",
+      "id": 6
     }
   ],
   "productos": [],

@@ -18,7 +18,7 @@ export function TableUsuarios() {
           <th scope="col">USER</th>
           <th scope="col">PASSWORD</th>
           <th scope="col">EMAIL</th>
-          <th scope="col">BORRAR</th>
+          <th scope="col">ACCIONES</th>
         </tr>
       </thead>
       <tbody id="myDataBody">
