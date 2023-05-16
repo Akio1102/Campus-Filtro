@@ -21,7 +21,7 @@ export async function GETUsers(event) {
   }
 }
 
-export async function GETUsuarios(event) {
+export async function GETUsuarios() {
   let peticion = await fetch(`${URL}/users`);
   let datos = await peticion.json();
   if (datos == false) {

@@ -35,11 +35,13 @@ categorias.addEventListener("click", (e) => {
   e.preventDefault();
   containerTabla.innerHTML = "";
   TableCategorias();
-  ModalCategorias();
+  let modalCategorias = document.querySelector("#modalCategorias");
+  if (modalCategorias == null) ModalCategorias();
 
   let myFormCategoria = document.querySelector(`#myFormCategoria`);
   myFormCategoria.addEventListener("submit", (e) => {
     e.preventDefault();
+    console.log(e);
     let accion = e.submitter.dataset.accion;
     if (accion === "enviar") {
       POSTCategorias(e);
@@ -67,22 +69,25 @@ productos.addEventListener("click", (e) => {
   e.preventDefault();
   containerTabla.innerHTML = "";
   TableProductos();
-  ModalProductos();
-  GETSelectCategorias()
+  let modalProductos = document.querySelector("#modalProductos");
+  if (modalProductos == null) ModalProductos();
+  GETSelectCategorias();
 });
 
 clientes.addEventListener("click", (e) => {
   e.preventDefault();
   containerTabla.innerHTML = "";
   TableCliente();
-  ModalClientes();
+  let modalClientes = document.querySelector("#modalClientes");
+  if (modalClientes == null) ModalClientes();
 });
 
 usuarios.addEventListener("click", (e) => {
   e.preventDefault();
   containerTabla.innerHTML = "";
   TableUsuarios();
-  ModalUser();
+  let modalUsuarios = document.querySelector("#modalUsuarios");
+  if (modalUsuarios == null) ModalUser();
 
   let myFormUser = document.querySelector(`#myFormUser`);
   myFormUser.addEventListener("submit", (e) => {
@@ -114,19 +119,22 @@ ventas.addEventListener("click", (e) => {
   e.preventDefault();
   containerTabla.innerHTML = "";
   TableVentas();
-  ModalVentas();
+  let modalVentas = document.querySelector("#modalVentas");
+  if (modalVentas == null) ModalVentas();
 });
 
 facturas.addEventListener("click", (e) => {
   e.preventDefault();
   containerTabla.innerHTML = "";
   TableFactura();
-  ModalFacturas();
+  let modalFacturas = document.querySelector("#modalFacturas");
+  if (modalFacturas == null) ModalFacturas();
 });
 
 compras.addEventListener("click", (e) => {
   e.preventDefault();
   containerTabla.innerHTML = "";
   TableCompras();
-  ModalCompras()
+  let modalCompras = document.querySelector("#modalCompras");
+  if (modalCompras == null) ModalCompras();
 });

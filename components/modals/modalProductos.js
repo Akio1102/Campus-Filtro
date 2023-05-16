@@ -28,13 +28,13 @@ export function ModalProductos() {
             <div class="modal-body">
               <div class="row g-3">
                 <div class="col-12">
-                  <label for="inputName" class="form-label">
+                  <label for="inputProductosName" class="form-label">
                     Nombre
                   </label>
                   <input
                     type="text"
                     class="form-control"
-                    id="inputName"
+                    id="inputProductosName"
                     placeholder="Ingrese el Nombre"
                     name="name"
                     required

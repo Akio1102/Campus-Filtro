@@ -49,10 +49,14 @@
             </div>
             <div class="col-4"></div>
             <div class="d-flex justify-content-evenly col-2">
-              <a href="../index.html"><i class="bi bi-box-arrow-left text-light fs-1"></i></a>
-              <a href=""><i class="bi bi-envelope text-light fs-1"></i></a>
-              <a href=""><i class="bi bi-bell text-light fs-1"></i></a>
-              <a href=""><i class="bi bi-person-circle text-light fs-1"></i></a>
+              <a href="../index.html"
+                ><i class="bi bi-box-arrow-left text-light fs-1"></i
+              ></a>
+              <a href="#"><i class="bi bi-envelope text-light fs-1"></i></a>
+              <a href="#"><i class="bi bi-bell text-light fs-1"></i></a>
+              <a href="#"
+                ><i class="bi bi-person-circle text-light fs-1"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -63,176 +67,75 @@
         <div class="col-6 col-md-2 bg-dark">
           <ul class="nav flex-column text-center">
             <li class="nav-item">
-              <a
-                href=""
-                class="text-decoration-none text-light fs-3"
+              <button
+                class="btn btn-dark fs-3 bg-transparent"
+                title="Boton de Categorias"
                 id="categorias"
-                ><i class="bi bi-person-circle text-light"></i> Categorias</a
               >
+                <i class="bi bi-person-circle text-light"></i> Categorias
+              </button>
             </li>
             <li class="nav-item">
-              <a
-                href=""
-                class="text-decoration-none text-light fs-3"
+              <button
+                class="btn btn-dark fs-3 bg-transparent"
+                title="Boton de Prodcutos"
                 id="productos"
-                ><i class="bi bi-person-circle text-light"></i> Productos</a
               >
+                <i class="bi bi-person-circle text-light"></i> Productos
+              </button>
             </li>
             <li class="nav-item">
-              <a
-                href=""
-                class="text-decoration-none text-light fs-3"
+              <button
+                class="btn btn-dark fs-3 bg-transparent"
+                title="Boton de Clientes"
                 id="clientes"
-                ><i class="bi bi-person-circle text-light"></i> Clientes</a
               >
+                <i class="bi bi-person-circle text-light"></i> Clientes
+              </button>
             </li>
             <li class="nav-item">
-              <a
-                href=""
-                class="text-decoration-none text-light fs-3"
+              <button
+                class="btn btn-dark fs-3 bg-transparent"
+                title="Boton de Usuarios"
                 id="usuarios"
-                ><i class="bi bi-person-circle text-light"></i> Usuarios</a
               >
+                <i class="bi bi-person-circle text-light"></i> Usuarios
+              </button>
             </li>
             <li class="nav-item">
-              <a
-                href=""
-                class="text-decoration-none text-light fs-3"
+              <button
+                class="btn btn-dark fs-3 bg-transparent"
+                title="Boton de Ventas"
                 id="ventas"
-                ><i class="bi bi-person-circle text-light"></i> Ventas</a
               >
+                <i class="bi bi-person-circle text-light"></i> Ventas
+              </button>
             </li>
             <li class="nav-item">
-              <a
-                href=""
-                class="text-decoration-none text-light fs-3"
+              <button
+                class="btn btn-dark fs-3 bg-transparent"
+                title="Boton de Facturas"
                 id="facturas"
-                ><i class="bi bi-person-circle text-light"></i> Facturas</a
               >
+                <i class="bi bi-person-circle text-light"></i> Facturas
+              </button>
             </li>
             <li class="nav-item">
-              <a
-                href=""
-                class="text-decoration-none text-light fs-3"
+              <button
+                class="btn btn-dark fs-3 bg-transparent"
+                title="Boton de Compras"
                 id="compras"
-                ><i class="bi bi-person-circle text-light"></i> Compras</a
               >
+                <i class="bi bi-person-circle text-light"></i> Compras
+              </button>
             </li>
           </ul>
         </div>
         <div
           class="col-6 col-sm-10 bg-dark container-fluid overflow-auto"
           id="container-table"
-        >
-          <!-- <table class="table table-dark table-hover">
-            <thead>
-              <tr>
-                <th scope="col">ID</th>
-                <th scope="col">IMAGEN</th>
-                <th scope="col">CLIENTE</th>
-                <th scope="col">CELULAR</th>
-                <th scope="col">DETALLES</th>
-                <th scope="col">BORRAR</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td><button type="button" class="btn btn-warning">Detail</button></td>
-                <td><button type="button" class="btn btn-danger">Borrar</button></td>
-              </tr>
-            </tbody>
-          </table> -->
-        </div>
+        ></div>
       </div>
     </div>
-
-   <!--  <div
-      class="modal fade"
-      id="modalFacturas"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="modalFacturasLabel"
-      aria-hidden="true"
-    >
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header bg-title fw-bold">
-          <h5 class="modal-title" id="modalFacturasLabel">
-            Registro de Facturas
-          </h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <form id="myFormFacturas">
-          <div class="modal-body">
-            <div class="row g-3">
-              <div class="col-12">
-                <label for="inputFacturaID" class="form-label">
-                  Factura ID
-                </label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="inputFacturaID"
-                  placeholder="Ingrese el Cliente"
-                  name="facturaID"
-                  required
-                />
-              </div>
-              <div class="col-12">
-                <label for="inputProductoID" class="form-label">
-                  Producto ID
-                </label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="inputProductoID"
-                  placeholder="Ingresa el Producto ID"
-                  name="productoID"
-                  required
-                />
-              </div>
-              <div class="col-12">
-                <label for="inputCantidad" class="form-label">
-                  Cantidad
-                </label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="inputCantidad"
-                  placeholder="Ingresa el Producto ID"
-                  name="cantidad"
-                  required
-                />
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <input
-              type="reset"
-              class="btn btn-danger text-dark"
-              data-bs-dismiss="modal"
-              value="Cerrar"
-            />
-            <input
-              type="submit"
-              class="btn btn-warning"
-              data-accion="enviar"
-              value="Enviar Registro"
-            />
-          </div>
-        </form>
-      </div>
-    </div>
-    </div> -->
   </body>
 </html>

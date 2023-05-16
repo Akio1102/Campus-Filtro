@@ -28,7 +28,7 @@ export function ModalCategorias() {
       <div class="modal-body">
         <div class="row g-3">
           <div class="col-12">
-            <label for="inputName" class="form-label">
+            <label for="inputName" class="form-label" title="Nombre">
               Nombre
             </label>
             <input
@@ -41,7 +41,7 @@ export function ModalCategorias() {
             />
           </div>
           <div class="col-12">
-            <label for="inputDescripcion" class="form-label">
+            <label for="inputDescripcion" class="form-label" title="Descripcion">
               Descripcion
             </label>
             <input

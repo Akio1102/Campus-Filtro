@@ -3,7 +3,7 @@ export function ModalFacturas() {
 
   let div = document.createElement("div");
   div.setAttribute("class", `modal fade`);
-  div.setAttribute("i", "modalFacturas");
+  div.setAttribute("id", "modalFacturas");
   div.setAttribute("data-bs-backdrop", "static");
   div.setAttribute("data-bs-keyboard", "false");
   div.setAttribute("tabindex", "-1");

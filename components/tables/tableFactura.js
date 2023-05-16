@@ -37,6 +37,6 @@ export function TableFactura() {
         </tr>
       </tbody>
         `;
-  containerTabla.appendChild(buttn);
+  containerTabla.appendChild(button);
   containerTabla.appendChild(table);
 }
